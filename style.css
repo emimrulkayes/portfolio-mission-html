@@ -9,9 +9,10 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
-
+/* reusable style */
 .px {
     padding: 0 30px;
 }
@@ -32,9 +33,6 @@ body {
 .ml {
     margin-left: 15px;
 }
-
-
-
 .section-space {
     padding: 60px 0;
 }
@@ -63,9 +61,12 @@ img {
 }
 h2 {
     font-size: 40px;
-    color: #1F2044;
+    color: #1f2044c7;
+    line-height: 46px;
+    font-weight: 700;
+    letter-spacing: normal;
+    margin-bottom: 15px;
 }
-
 
 .clr-title {
     color: #FFAD5A;
@@ -77,7 +78,7 @@ p {
     font-size: 16px;
     color: #424242;
     font-family: 'Poppins', sans-serif;
-    text-align: justify;
+    text-align: left;
     margin-bottom: 25px;
     font-weight: 400;
 }
@@ -116,7 +117,7 @@ p {
     color: #FFAD5A;
 }
 
-/* Service area style  */
+/* Service area style start */
 .service-area {
     text-align: center;
 }
@@ -142,3 +143,82 @@ p {
     font-weight: 700;
     padding: 10px 0;
 }
+/* Service area style end  */
+
+/* Documetation area style start */
+.documentation-area {
+    position: relative;
+
+}
+.documentation-area::before {
+    content: '';
+    position: absolute;
+    left: -113px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 227px;
+    height: 227px;
+    background: url(./images/shapes/shape-1.png);
+    background-size: contain;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+/* Documetation area style end */
+
+/* Team area style start */
+.about-team-area {
+    position: relative;
+}
+.about-team-area::before {
+    content: '';
+    position: absolute;
+    right: -90px;
+    bottom: -15px;
+    /* transform: translateY(-50%); */
+    width: 227px;
+    height: 227px;
+    background: url(./images/shapes/shape-1.png);
+    background-size: contain;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+/* Team area style end */
+
+/* Client Feedback area style start */
+/* .client-area {
+    text-align: center;
+    margin-bottom: 50px;
+} */
+.client-area h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.content-area h2 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+/* Client Feedback area style End */
+
+/* Footer area style */
+.footer-area {
+    background: #0B0D17;
+    padding: 35px 0px 45px 0px;
+    text-align: center;
+}
+
+.footer-area h2 {
+    font-family: 'Lobster', cursive;
+    color: #FFF;
+    font-family: 500;
+}
+.footer-area>p {
+    color: #FFF;
+    text-align: center;
+    font-weight: 200;
+    margin: 0;
+}
+
+.f-clr {
+    color: #FF5959;
+}
+/* Footer area style End */
